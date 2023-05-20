@@ -9,14 +9,14 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
     <div className={'topbar ' + (menuOpen && 'active')}>
       <div className="wrapper">
         <div className="left">
-          <a href="#works" className='logo'>genius.</a>
+          <a href="#works" className='logo'>DudeAj</a>
           <div className="itemContainer">
             <PersonIcon className='icon' />
-            <span>+91 8979806045</span>
+            <span>+91 8979806093</span>
           </div>
           <div className="itemContainer">
             <MailIcon className="icon" />
-            <span>ajay@contact.com</span>
+            <span>business.ajaygangwar@gmail.com</span>
           </div>
         </div>
         <div className="right">
