@@ -1,0 +1,13 @@
+/* body {
+    background-color: #212121; 
+    background-image: radial-gradient(circle, #737171 1px, transparent 1px);
+    background-size: 40px 40px; 
+  }
+   */
+
+body {
+  background-color: #212121; /* Dark Grey */
+  background-image: linear-gradient(90deg, #323232 1px, transparent 1px),
+    linear-gradient(180deg, #323232 1px, transparent 1px);
+  background-size: 48px 48px; /* Adjust spacing */
+}
