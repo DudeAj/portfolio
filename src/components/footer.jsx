@@ -23,7 +23,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <div id="contact" className="bg-[#242424]">
-      <div className="flex gap-44 px-20 py-10">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-44 px-5 md:px-20 py-10">
         <div className="w-full">
           <h2 className="text-4xl font-bold">
             Available for select freelance opportunities
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="w-full">
           <a
-            className="text-3xl font-bold border-b-4 border-purple-500 text-white hover:text-purple-400 transition duration-300"
+            className="text-lg md:text-3xl font-bold border-b-4 border-purple-500 text-white hover:text-purple-400 transition duration-300"
             href="mailto:ajaygangwar04@gmail.com"
           >
             ajaygangwar04@gmail.com

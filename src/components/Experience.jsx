@@ -11,10 +11,77 @@ const Experience = () => {
       company: "Universal Weather and Aviation",
       experience: "June 2023 - Present",
       location: "Gurugram, Haryana",
-      description:
-        "Co-founded Life Coach Elevate, managing end-to-end technical infrastructure, including server architecture, automation pipeline development, leadership of the web development and design team, and driving initiatives to optimize scalability and system performance.",
-      logo: "https://tamalsen.dev/wp-content/uploads/2025/01/LCE-Logo-Reverse.png",
-      tech: ["React.Js", "Javscript", "Typescript", "CSS", "Azure"],
+      description: (
+        <>
+          <section class="project">
+            <h4 className="font-semibold">ChefFour Vehicle Booking System</h4>
+            <ul className="list-disc pl-7 text-sm font-normal">
+              <li>
+                Built and enhanced corporate vehicle reservation workflows for
+                internal operations.
+              </li>
+              <li>
+                Integrated transportation services with{" "}
+                <strong>Drivania</strong> for seamless booking and status
+                tracking.
+              </li>
+              <li>
+                Implemented validations, SLA-aware flows, and role-based access
+                for ops teams.
+              </li>
+            </ul>
+          </section>
+
+          <section class="project mt-3">
+            <h4 className="font-semibold">Hotel Booking Module</h4>
+            <ul className="list-disc pl-7 text-sm font-normal">
+              <li>
+                Designed and developed hotel reservation features with{" "}
+                <strong>Sabre API</strong> integration.
+              </li>
+              <li>
+                Enabled search, quote, hold, confirm, and cancellation flows for
+                internal request handling.
+              </li>
+              <li>
+                Added audit logs, alerts, and error handling for reliable
+                operations.
+              </li>
+            </ul>
+          </section>
+
+          <section class="project mt-3">
+            <h4 className="font-semibold">Ground Handling Services Tool</h4>
+            <ul className="list-disc pl-7 text-sm font-normal">
+              <li>
+                Built modules to manage ground ops requests, vendor
+                coordination, and fulfillment.
+              </li>
+              <li>
+                Created dashboards for queue visibility, prioritization, and
+                exceptions.
+              </li>
+              <li>
+                Exportable reports for compliance and performance tracking.
+              </li>
+            </ul>
+          </section>
+        </>
+      ),
+      logo: "",
+      tech: [
+        "React.Js",
+        "Typescript",
+        "Javscript",
+        "Microfrontends",
+        "Azure",
+        "Redux Toolkit",
+        "Zustand",
+        "GraphQL",
+        "CSS",
+        "Tailwind CSS",
+        "MUI",
+      ],
       website: "https://universalweather.com",
     },
     {
@@ -22,10 +89,92 @@ const Experience = () => {
       company: "Orangemantra Pvt. Ltd.",
       experience: "Nov 2021 - May 2023",
       location: "Gurugram, Haryana",
-      description:
-        "Co-founded Life Coach Elevate, managing end-to-end technical infrastructure, including server architecture, automation pipeline development, leadership of the web development and design team, and driving initiatives to optimize scalability and system performance.",
+      description: (
+        <>
+          <section class="project">
+            <h4 className="font-semibold">1. E-Commerce Website</h4>
+            <ul className="list-disc pl-7 text-sm font-normal">
+              <li>
+                Built <strong>product listing</strong>, <strong>cart</strong>,{" "}
+                <strong>wishlist</strong>, and <strong>checkout</strong> flows
+                with secure payment gateway integration (Razorpay/Stripe).
+              </li>
+              <li>
+                Implemented{" "}
+                <strong>role-based authentication &amp; authorization</strong>{" "}
+                for admin, vendor, and customer panels.
+              </li>
+              <li>
+                Developed a <strong>custom CMS</strong> to manage products,
+                categories, promotions, and order reports.
+              </li>
+              <li>
+                Optimized performance with <strong>lazy loading</strong> and{" "}
+                <strong>code splitting</strong>, improving load times by ~30%.
+              </li>
+            </ul>
+          </section>
+
+          <section class="project mt-3">
+            <h4 className="font-semibold">2. Doctor–Patient Portal</h4>
+            <ul className="list-disc pl-7 text-sm font-normal">
+              <li>
+                Developed a secure <strong>appointment booking</strong> system
+                with doctor availability and patient history.
+              </li>
+              <li>
+                Added <strong>real-time chat</strong> and{" "}
+                <strong>video consultation</strong> using WebSockets and
+                third-party APIs.
+              </li>
+              <li>
+                Implemented <strong>digital prescriptions</strong> and
+                integrated payments for online consultations.
+              </li>
+              <li>
+                Created <strong>role-based dashboards</strong> for doctors,
+                patients, and clinic admins.
+              </li>
+            </ul>
+          </section>
+
+          <section class="project mt-3">
+            <h4 className="font-semibold">3. Garbage Management Panel</h4>
+            <ul className="list-disc pl-7 text-sm font-normal">
+              <li>
+                Designed a dashboard to track{" "}
+                <strong>collection vehicles</strong>, <strong>routes</strong>,
+                and <strong>schedules</strong>.
+              </li>
+              <li>
+                Implemented <strong>real-time monitoring</strong> of collection
+                status and complaint resolution.
+              </li>
+              <li>
+                Built data visualizations with <strong>Apex Charts</strong> for
+                trend analysis and resource optimization.
+              </li>
+              <li>
+                Created admin modules for task assignment, worker performance
+                tracking, and monthly reports.
+              </li>
+            </ul>
+          </section>
+        </>
+      ),
       logo: "",
-      tech: ["React.Js", "Javscript", "HTML", "Material UI", "CSS", "SCSS"],
+      tech: [
+        "React.js",
+        "Typescript",
+        "Javascript",
+        "Redux",
+        "SCSS",
+        "Tailwind CSS",
+        "Material-UI",
+        "Apex Charts",
+        "Razor Pay",
+        "WebSockets",
+      ],
       website: "https://orangemantra.com",
     },
   ];
@@ -39,9 +188,9 @@ const Experience = () => {
   }, []);
 
   return (
-    <div id="experience" className="min-h-screen flex flex-col items-center">
+    <div id="experience" className="min-h-screen flex flex-col px-6 items-center">
       <motion.h1
-        className="font-bold text-7xl text-center mt-20"
+        className="font-bold text-5xl md:text-7xl text-center mt-20"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -49,7 +198,7 @@ const Experience = () => {
         Professional Experience
       </motion.h1>
 
-      <div className="relative mt-20 w-2/4 flex flex-col gap-5">
+      <div className="relative mt-20 w-full md:w-2/4 flex flex-col gap-5">
         {/* Job Items */}
         {jobData.map((item, index) => (
           <motion.div
@@ -61,7 +210,9 @@ const Experience = () => {
             <JobItem
               item={item}
               isExpanded={expandedIndex === index}
-              onToggle={() => setExpandedIndex(expandedIndex === index ? null : index)}
+              onToggle={() =>
+                setExpandedIndex(expandedIndex === index ? null : index)
+              }
             />
           </motion.div>
         ))}

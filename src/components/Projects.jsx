@@ -19,7 +19,7 @@ const Projects = () => {
   const [projects] = useState([
     {
       title: "Boss Panda",
-      website: "",
+      website: "https://bosspanda.vercel.app/",
       type: PROJECT_TYPE.FRONTEND,
       image: "./bosspanda.png",
     },
@@ -31,15 +31,15 @@ const Projects = () => {
     },
     {
       title: "DreamGamez",
-      website: "https://www.bosspanda.io/",
+      website: "https://dreamgamez.io/",
       type: PROJECT_TYPE.FRONTEND,
       image: "./dreamgamez.png",
     },
     {
       title: "Param Organic",
-      website: "https://www.paramorganic.com/",
+      website: "https://paramorganic.vercel.app/",
       type: PROJECT_TYPE.FRONTEND,
-      image: "./bosspanda.png",
+      image: "./param-organic.png",
     },
     {
       title: "Aura",
@@ -48,10 +48,10 @@ const Projects = () => {
       image: "./aura.png",
     },
     {
-      title: "Param Organic",
-      website: "https://www.paramorganic.com/",
-      type: PROJECT_TYPE.FRONTEND,
-      image: "./bosspanda.png",
+      title: "Flat Share Karo",
+      website: "https://flatsharekaro.in/",
+      type: PROJECT_TYPE.FULLSTACK,
+      image: "./flatsharekaro.png",
     },
   ]);
 
@@ -67,7 +67,7 @@ const Projects = () => {
   const isInView = useInView(projectsRef, { once: true, amount: 0.3 }); // Triggers when 30% is visible
 
   return (
-    <div id='work' className="mt-10 px-30">
+    <div id="work" className="mt-10 px-5 md:px-30">
       <h1 className="text-center text-7xl font-bold">Projects</h1>
       <div className="flex gap-10 mt-10">
         <p>Filter By</p>
@@ -94,7 +94,7 @@ const Projects = () => {
       {/* Projects Grid */}
       <div
         ref={projectsRef}
-        className="grid grid-cols-3 mt-10 grid-flow-row gap-4"
+        className="grid grid-cols-1 md:grid-cols-3 mt-10 grid-flow-row gap-4"
       >
         {filteredProjects.map((item, index) => (
           <motion.div

@@ -2,64 +2,136 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 
+// const initialData = [
+//   {
+//     name: "React.js",
+//     icons: "./react.svg",
+//     color: "#58C4DC",
+//     top: 40,
+//     left: 100,
+//   },
+//   {
+//     name: "Node.js",
+//     icons: "./node-js.svg",
+//     color: "#539e43",
+//     top: 140,
+//     left: 400,
+//   },
+//   { name: "html", icons: "./html.svg", color: "#f09701", top: 100, right: 500 },
+//   { name: "css", icons: "./css.svg", color: "#2aa4f4", top: 80, right: 100 },
+//   {
+//     name: "javascript",
+//     icons: "./javascript.svg",
+//     color: "#f7df1e",
+//     top: 200,
+//     right: 300,
+//   },
+//   {
+//     name: "typescript",
+//     icons: "./typescript.svg",
+//     color: "#1976d2",
+//     top: 300,
+//     left: 180,
+//   },
+//   {
+//     name: "mongodb",
+//     icons: "./mongodb.svg",
+//     color: "#5d4037",
+//     bottom: 300,
+//     left: 0,
+//   },
+//   {
+//     name: "mysql",
+//     icons: "./mysql.svg",
+//     color: "#58C4DC",
+//     bottom: 200,
+//     left: 350,
+//   },
+//   {
+//     name: "tailwind",
+//     icons: "./tailwind-css.svg",
+//     color: "#009bb8",
+//     bottom: 300,
+//     right: 150,
+//   },
+//   {
+//     name: "webpack",
+//     icons: "./webpack.svg",
+//     color: "#81d4fa",
+//     bottom: 200,
+//     right: 500,
+//   },
+// ];
 const initialData = [
   {
     name: "React.js",
     icons: "./react.svg",
     color: "#58C4DC",
-    top: 40,
-    left: 100,
+    top: "10%",
+    left: "30%",
   },
   {
     name: "Node.js",
     icons: "./node-js.svg",
     color: "#539e43",
-    top: 140,
-    left: 400,
+    top: "15%",
+    left: "70%",
   },
-  { name: "html", icons: "./html.svg", color: "#f09701", top: 100, right: 500 },
-  { name: "css", icons: "./css.svg", color: "#2aa4f4", top: 80, right: 100 },
+  {
+    name: "html",
+    icons: "./html.svg",
+    color: "#f09701",
+    top: "18%",
+    left: "15%",
+  },
+  {
+    name: "css",
+    icons: "./css.svg",
+    color: "#2aa4f4",
+    top: "22%",
+    left: "80%",
+  },
   {
     name: "javascript",
     icons: "./javascript.svg",
     color: "#f7df1e",
-    top: 200,
-    right: 300,
+    top: "38%",
+    left: "50%",
   },
   {
     name: "typescript",
     icons: "./typescript.svg",
     color: "#1976d2",
-    top: 300,
-    left: 180,
+    top: "55%",
+    left: "35%",
   },
   {
     name: "mongodb",
     icons: "./mongodb.svg",
     color: "#5d4037",
-    bottom: 300,
-    left: 0,
+    top: "55%",
+    left: "6%",
   },
   {
     name: "mysql",
     icons: "./mysql.svg",
     color: "#58C4DC",
-    bottom: 200,
-    left: 350,
+    top: "75%",
+    left: "55%",
   },
   {
     name: "tailwind",
     icons: "./tailwind-css.svg",
     color: "#009bb8",
-    bottom: 300,
-    right: 150,
+    top: "65%",
+    left: "80%",
   },
   {
     name: "webpack",
     icons: "./webpack.svg",
     color: "#81d4fa",
-    bottom: 200,
-    right: 500,
+    top: "75%",
+    left: "20%",
   },
 ];
 
@@ -83,19 +155,25 @@ const Technology = () => {
   });
 
   return (
-    <div className="h-screen w-full px-20 relative overflow-hidden">
+    <div className="min-h-screen md:h-screen w-full mt-20 md:mt-40 px-5 md:px-20 relative overflow-hidden">
       <div className="flex justify-center">
-        <h1 className="font-bold text-7xl w-1/2 text-center">Technology</h1>
+        <h1 className="font-bold text-5xl md:text-7xl mx-auto w-full md:w-1/2 text-center">
+          Technology
+        </h1>
       </div>
       <div
         ref={wrapperRef}
-        className="relative w-full h-full flex justify-center items-center gap-5 mt-5"
+        className="relative h-[85vh] w-full md:h-full flex justify-center items-center gap-5 mt-5"
       >
-        <div className="w-1/2 text-center -mt-44">
-          <p className="text-xl font-semibold">A growing library of</p>
-          <p className="text-6xl font-semibold mt-2">1,150 apps</p>
-          <p className="text-6xl font-semibold mt-2">405,800 screens</p>
-          <p className="text-6xl font-semibold mt-16">81,700 flows</p>
+        <div className="w-full md:w-1/2 text-center mt-0 md:-mt-44">
+          <p className="text-xl font-semibold mb-10">A growing library of</p>
+          <p className="text-3xl md:text-6xl font-semibold mt-2">1,150 apps</p>
+          <p className="text-3xl md:text-6xl font-semibold mt-2">
+            405,800 screens
+          </p>
+          <p className="text-3xl md:text-6xl font-semibold mt-16">
+            81,700 flows
+          </p>
         </div>
 
         {initialData.map((item, index) => (

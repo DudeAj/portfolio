@@ -33,7 +33,8 @@ const Expertise = () => {
   return (
     <div
       id="expertise"
-      className="h-screen flex items-center w-full justify-center"
+      className="h-auto 
+       flex px-5 mt-20 md:mt-30 w-full justify-center"
     >
       <div ref={ref} className="w-full">
         {/* Title Animation */}
@@ -47,19 +48,19 @@ const Expertise = () => {
         </motion.h1>
 
         <div className="mt-16 flex justify-center">
-          <div className="grid grid-cols-3 w-3/4">
+          <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-3/4">
             {expertiseData.map((item, index) => (
-               <motion.div
-               key={index}
-               className="border-2 py-10 px-8"
-               initial={{ opacity: 0, scale: 0.8, y: 30 }}
-               animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
-               transition={{
-                 duration: 0.6,
-                 ease: "easeOut",
-                 delay: index * 0.2,
-               }}
-             >
+              <motion.div
+                key={index}
+                className="border-2 py-10 px-8"
+                initial={{ opacity: 0, scale: 0.8, y: 30 }}
+                animate={isInView ? { opacity: 1, scale: 1, y: 0 } : {}}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: index * 0.2,
+                }}
+              >
                 <div className="flex items-center gap-5 mb-4">
                   {item.icon}
                   <h2 className="text-2xl font-bold">{item.title}</h2>
@@ -77,14 +78,14 @@ const Expertise = () => {
 
         {/* Background Image Animation */}
         <motion.div
-          className="flex justify-center relative -mt-20"
+          className="flex justify-center relative"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={isInView ? { scale: 1, opacity: 0.2 } : {}}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <img
             src="https://tamalsen.dev/wp-content/uploads/2021/12/hello-world-html-code-768x384.png"
-            className="absolute scale-75"
+            className="absolute scale-75 top-[-140px]"
           />
         </motion.div>
       </div>
