@@ -7,9 +7,54 @@ const Experience = () => {
 
   const jobData = [
     {
-      role: "Software Engineer",
+      role: "Senior Experience Engineer",
+      company: "Publicis Sapient",
+      experience: "Dec 2025 - Present",
+      location: "Noida, Uttar Pradesh",
+      description: (
+        <>
+          <section class="project">
+            <h4 className="font-semibold">
+              I have Recently Joined Publicis Sapient
+            </h4>
+            {/* <ul className="list-disc pl-7 text-sm font-normal">
+              <li>
+                Built and enhanced corporate vehicle reservation workflows for
+                internal operations.
+              </li>
+              <li>
+                Integrated transportation services with{" "}
+                <strong>Drivania</strong> for seamless booking and status
+                tracking.
+              </li>
+              <li>
+                Implemented validations, SLA-aware flows, and role-based access
+                for ops teams.
+              </li>
+            </ul> */}
+          </section>
+        </>
+      ),
+      logo: "",
+      tech: [
+        "React.Js",
+        "Typescript",
+        "Javscript",
+        "Microfrontends",
+        "Azure",
+        "Redux Toolkit",
+        "Zustand",
+        "GraphQL",
+        "CSS",
+        "Tailwind CSS",
+        "MUI",
+      ],
+      website: "https://www.publicissapient.com",
+    },
+    {
+      role: "Frontend Developer",
       company: "Universal Weather and Aviation",
-      experience: "June 2023 - Present",
+      experience: "June 2023 - Nov 2025",
       location: "Gurugram, Haryana",
       description: (
         <>
@@ -188,7 +233,10 @@ const Experience = () => {
   }, []);
 
   return (
-    <div id="experience" className="min-h-screen flex flex-col px-6 items-center">
+    <div
+      id="experience"
+      className="min-h-screen flex flex-col px-6 items-center"
+    >
       <motion.h1
         className="font-bold text-5xl md:text-7xl text-center mt-20"
         initial={{ opacity: 0, y: -50 }}

@@ -71,6 +71,13 @@ const initialData = [
     left: "30%",
   },
   {
+    name: "Next.js",
+    icons: "./next.svg",
+    color: "#fff",
+    top: "20%",
+    left: "45%",
+  },
+  {
     name: "Node.js",
     icons: "./node-js.svg",
     color: "#539e43",
@@ -96,7 +103,7 @@ const initialData = [
     icons: "./javascript.svg",
     color: "#f7df1e",
     top: "38%",
-    left: "50%",
+    left: "60%",
   },
   {
     name: "typescript",
@@ -165,16 +172,20 @@ const Technology = () => {
         ref={wrapperRef}
         className="relative h-[85vh] w-full md:h-full flex justify-center items-center gap-5 mt-5"
       >
-        <div className="w-full md:w-1/2 text-center mt-0 md:-mt-44">
-          <p className="text-xl font-semibold mb-10">A growing library of</p>
-          <p className="text-3xl md:text-6xl font-semibold mt-2">1,150 apps</p>
-          <p className="text-3xl md:text-6xl font-semibold mt-2">
-            405,800 screens
+        {/* <div className="w-full md:w-1/2 text-center mt-0 md:-mt-44">
+          <p className="text-xl font-semibold mb-10">
+            Where design meets frontend engineering
           </p>
-          <p className="text-3xl md:text-6xl font-semibold mt-16">
-            81,700 flows
+          <p className="text-3xl md:text-2xl font-semibold mt-2">
+            Accessible, responsive interfaces
           </p>
-        </div>
+          <p className="text-3xl md:text-2xl font-semibold mt-2">
+            Reusable component systems
+          </p>
+          <p className="text-3xl md:text-2xl font-semibold mt-16">
+            Optimized interaction flows
+          </p>
+        </div> */}
 
         {initialData.map((item, index) => (
           <motion.span

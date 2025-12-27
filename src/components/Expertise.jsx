@@ -1,5 +1,6 @@
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { FaReact } from "react-icons/fa6";
+import { SiNextdotjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -19,10 +20,11 @@ const expertiseData = [
       "Passionate about UI/UX. Over 5 years of development experience in HTML, CSS, JS, React, and NextJS frameworks.",
   },
   {
-    icon: <FaNodeJs size={60} />,
-    title: "Backend Dev NodeJS, Django",
+    // icon: <FaNodeJs size={60} />,
+    icon: <FaReact size={60} />,
+    title: "Mobile App Dev React Native",
     description:
-      "Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.",
+      "Skilled in developing hybrid mobile apps and cross-platform solutions using the React Native framework.",
   },
 ];
 
