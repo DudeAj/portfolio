@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 const PROJECT_TYPE = {
   FULLSTACK: "fullstack",
   FRONTEND: "frontend",
+  BACKEND: "backend",
 };
 
 const getCount = (value) => (value < 10 ? `0${value}` : value);
@@ -14,6 +15,7 @@ const Projects = () => {
     { label: "All", value: "ALL", active: true },
     { label: "Fullstack", value: PROJECT_TYPE.FULLSTACK, active: false },
     { label: "Frontend", value: PROJECT_TYPE.FRONTEND, active: false },
+    { label: "Backend", value: PROJECT_TYPE.BACKEND, active: false },
   ]);
 
   const [projects] = useState([
@@ -53,6 +55,12 @@ const Projects = () => {
       type: PROJECT_TYPE.FULLSTACK,
       image: "./flatsharekaro.png",
     },
+    {
+      title: "Todo App",
+      website: "https://todo-five-fawn-82.vercel.app/",
+      type: PROJECT_TYPE.BACKEND,
+      image: "./todo.png",
+    },
   ]);
 
   const [activeFilter, setActiveFilter] = useState("ALL");
@@ -84,7 +92,8 @@ const Projects = () => {
               {getCount(
                 filter.value === "ALL"
                   ? projects.length
-                  : projects.filter((item) => item.type === filter.value).length
+                  : projects.filter((item) => item.type === filter.value)
+                      .length,
               )}
             </span>
           </div>

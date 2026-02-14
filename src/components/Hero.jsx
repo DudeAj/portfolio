@@ -22,28 +22,26 @@ const Hero = () => {
         <h1 className="md:text-[8vw] text-5xl uppercase font-semibold text-center -mt-20">
           AJAY GANGWAR
         </h1>
-        <motion.p
+        {/* <motion.p
           className="text-2xl font-normal uppercase text-center tracking-widest"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
           Software Engineer, Frontend Web & App Developer.
-        </motion.p>
-        {/* <motion.p
-          className="text-xl font-normal w-3/4 mt-10 text-white text-center tracking-widest leading-relaxed"
+        </motion.p> */}
+        <motion.p
+          className="text-xl uppercase font-normal w-3/4 text-white text-center tracking-widest leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
-          I’m Ajay Gangwar ·{" "}
-          <span className="text-pink-400">Based in Delhi, India</span> · Senior
-          Frontend Engineer with Experience Building Scalable, High-Performance
-          Web Applications. I Specialize in React, TypeScript, and Modern
-          Frontend Architectures, Focusing on Clean Code, Accessibility,
-          Performance Optimization, and Delivering Reliable User-Centric
-          Products at Scale.
-        </motion.p> */}
+          I’m Ajay Kumar Gangwar, a Senior Full Stack Developer focused on
+          building fast, scalable, and SEO-optimized web applications with
+          React.js, Next.js, Node.js, and AI technologies. I turn complex ideas
+          into high-performance digital products that drive real business
+          impact.
+        </motion.p>
 
         <motion.span
           className="absolute bottom-0 h-16 border w-9 cursor-pointer rounded-full flex justify-center items-end p-1"
