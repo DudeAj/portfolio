@@ -32,6 +32,12 @@ const Projects = () => {
       image: "./arise.png",
     },
     {
+      title: "MovieFlix",
+      website: "https://movieflix-one-alpha.vercel.app/",
+      type: PROJECT_TYPE.FRONTEND,
+      image: "./movieflix.png",
+    },
+    {
       title: "DreamGamez",
       website: "https://dreamgamez.io/",
       type: PROJECT_TYPE.FRONTEND,
@@ -56,7 +62,7 @@ const Projects = () => {
       image: "./flatsharekaro.png",
     },
     {
-      title: "Todo App",
+      title: "Todo App - Backend",
       website: "https://todo-five-fawn-82.vercel.app/",
       type: PROJECT_TYPE.BACKEND,
       image: "./todo.png",

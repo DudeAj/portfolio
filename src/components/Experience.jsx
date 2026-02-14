@@ -59,55 +59,43 @@ const Experience = () => {
       description: (
         <>
           <section class="project">
-            <h4 className="font-semibold">ChefFour Vehicle Booking System</h4>
+            {/* <h4 className="font-semibold">ChefFour Vehicle Booking System</h4> */}
             <ul className="list-disc pl-7 text-sm font-normal">
               <li>
-                Built and enhanced corporate vehicle reservation workflows for
-                internal operations.
+                Spearheaded migration from legacy system to modern
+                React/TypeScript stack, reducing bundle size by 60% while
+                implementing Webpack Module Federation for micro-frontend
+                architecture
               </li>
               <li>
-                Integrated transportation services with{" "}
-                <strong>Drivania</strong> for seamless booking and status
-                tracking.
+                Optimized CI/CD pipelines using GitHub Actions and Docker,
+                reducing deployment time by 85% through parallel job execution
+                and caching strategies
               </li>
-              <li>
-                Implemented validations, SLA-aware flows, and role-based access
-                for ops teams.
-              </li>
-            </ul>
-          </section>
 
-          <section class="project mt-3">
-            <h4 className="font-semibold">Hotel Booking Module</h4>
-            <ul className="list-disc pl-7 text-sm font-normal">
               <li>
-                Designed and developed hotel reservation features with{" "}
-                <strong>Sabre API</strong> integration.
+                Mentored 4 junior developers through weekly 1:1 sessions and
+                code reviews, improving their React proficiency by 2 skill
+                levels within 6 months
               </li>
               <li>
-                Enabled search, quote, hold, confirm, and cancellation flows for
-                internal request handling.
+                Conducted monthly "Tech Talks" to share knowledge on emerging
+                trends like React Server Components and Turborepo, keeping team
+                skills current
               </li>
-              <li>
-                Added audit logs, alerts, and error handling for reliable
-                operations.
-              </li>
-            </ul>
-          </section>
 
-          <section class="project mt-3">
-            <h4 className="font-semibold">Ground Handling Services Tool</h4>
-            <ul className="list-disc pl-7 text-sm font-normal">
               <li>
-                Built modules to manage ground ops requests, vendor
-                coordination, and fulfillment.
+                Implemented comprehensive code review checklist that reduced
+                production bugs by 30% while maintaining 85% test coverage with
+                Jest/React Testing Library
               </li>
               <li>
-                Created dashboards for queue visibility, prioritization, and
-                exceptions.
+                Collaborated with UX team to refine 15+ components based on WCAG
+                standards, improving accessibility score from 75 to 95
               </li>
               <li>
-                Exportable reports for compliance and performance tracking.
+                Pioneered adoption of TanStack Query for server state
+                management, eliminating 40% of redundant API calls
               </li>
             </ul>
           </section>
